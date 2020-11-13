@@ -15,8 +15,9 @@ pipeline {
       stage('自定义构建过程') {
         steps {
           echo '执行自定义步骤'
-          sh 'npm install'
-          sh 'npm build'
+          sh 'npm install -g cnpm --registry=https://registry.npm.taobao.org'
+          sh 'cnpm install'
+          sh 'npm run build'
         }
       }
       stage('上传') {
