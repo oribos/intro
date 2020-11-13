@@ -27,6 +27,8 @@ pipeline {
           sh 'mv ossutil64 ossutil'
           sh 'chmod 755 ossutil'
           sh 'ls -a'
+          sh './ossutil config -e ${OSS_EP} -i ${OSS_ID} -k ${OSS_KEY}'
+          sh './ossutil cp ./public oss://blog1-web-holz/ -rf'
         }
       }
     }
