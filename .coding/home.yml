@@ -16,7 +16,7 @@ pipeline {
         steps {
           echo '执行自定义步骤'
           sh 'npm install'
-          sh 'gatsby build'
+          sh 'npm build'
         }
       }
       stage('上传') {
