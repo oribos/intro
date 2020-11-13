@@ -39,7 +39,7 @@ const Footer = () => {
         >
           Theme
         </Link>
-        <div sx={{ mx: 1 }}>由</div>
+        <div sx={{ mx: 1 }}>by</div>
         {` `}
         <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
           LekoArts
