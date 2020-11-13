@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+  stages {
+    stage('检出') {
+      steps {
+        checkout([
+          $class: 'GitSCM',
+          branches: [[name: GIT_BUILD_REF]],
+          userRemoteConfigs: [[
+            url: GIT_REPO_URL,
+            credentialsId: CREDENTIALS_ID
+          ]]])
+        }
+      }
+      stage('自定义构建过程') {
+        steps {
+          echo '执行自定义步骤'
+          sh 'npm install'
+          sh 'gatsby build'
+        }
+      }
+      stage('上传') {
+        steps {
+          sh 'echo hello CODING'
+        }
+      }
+    }
+  }
