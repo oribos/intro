@@ -21,7 +21,11 @@ pipeline {
       }
       stage('上传') {
         steps {
-          sh 'echo hello CODING'
+          echo '执行上传步骤'
+          sh 'wget http://gosspublic.alicdn.com/ossutil/1.6.14/ossutil64'
+          sh 'mv ossutil64 ossutil'
+          sh 'chmod 755 ossutil'
+          sh 'ls -a'
         }
       }
     }
