@@ -18,7 +18,7 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      Copyright &copy; {new Date().getFullYear()}.     <a class="theme-link" href="http://beian.miit.gov.cn/"> 豫ICP备2020027870号-2</a> All rights reserved. 
+      Copyright &copy; {new Date().getFullYear()}.<a class="theme-link" href="http://beian.miit.gov.cn/"> 豫ICP备2020027870号-2</a> All rights reserved. 
        <br />
       <Flex
         sx={{
