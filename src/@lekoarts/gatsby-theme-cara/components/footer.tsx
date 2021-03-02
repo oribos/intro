@@ -10,14 +10,14 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="footer">
-      <button
+      {/* <button
         sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
         onClick={toggleColorMode}
         type="button"
         aria-label="Toggle dark mode"
       >
         {isDark ? `Light` : `Dark`}
-      </button>
+      </button> */}
       Copyright &copy; {new Date().getFullYear()}.
       {` `}
       <Link aria-label="icp" href="http://beian.miit.gov.cn/">
@@ -25,7 +25,7 @@ const Footer = () => {
         </Link>
     All rights reserved.
       <br />
-      <Flex
+      {/* <Flex
         sx={{
           justifyContent: `center`,
           alignItems: `center`,
@@ -34,22 +34,22 @@ const Footer = () => {
           fontWeight: `semibold`,
           a: { color: `text` },
         }}
-      >
-        <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" />
-        {` `}
-        <Link
+      > */}
+        {/* <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" /> */}
+        {/* {` `} */}
+        {/* <Link
           aria-label="Link to the theme's GitHub repository"
           sx={{ ml: 2 }}
           href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara"
         >
           Theme
-        </Link>
-        <div sx={{ mx: 1 }}>by</div>
-        {` `}
-        <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
+        </Link> */}
+        {/* <div sx={{ mx: 1 }}>by</div> */}
+        {/* {` `} */}
+        {/* <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
           LekoArts
-        </Link>
-      </Flex>
+        </Link> */}
+      {/* </Flex> */}
     </Box>
   )
 }
